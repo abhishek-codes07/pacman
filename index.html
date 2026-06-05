@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 PAC-MAN GAME 🎮</h1>
+            <div class="info">
+                <div class="info-item">
+                    <span class="label">Score:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Lives:</span>
+                    <span class="value" id="lives">3</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Level:</span>
+                    <span class="value" id="level">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="560" height="600"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn">START GAME</button>
+            <button id="pauseBtn" class="btn" disabled>PAUSE</button>
+            <button id="resetBtn" class="btn">RESET</button>
+        </div>
+
+        <div class="instructions">
+            <h2>How to Play</h2>
+            <ul>
+                <li><strong>Arrow Keys</strong> - Move Pac-Man</li>
+                <li><strong>WASD Keys</strong> - Alternative controls</li>
+                <li><strong>Objective:</strong> Eat all the pellets to complete the level</li>
+                <li><strong>Avoid:</strong> The ghosts (red, blue, orange, pink)</li>
+                <li><strong>Power Pellets:</strong> Eat them to temporarily turn ghosts blue and earn points</li>
+                <li><strong>Game Over:</strong> When you lose all 3 lives</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Pac-Man Game | Created with ❤️</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
